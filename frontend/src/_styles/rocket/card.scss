@@ -4,10 +4,12 @@
   outline: 1px solid var(--border-weak);
   box-shadow: var(--elevation-100-box-shadow);
   border-radius: 8px;
-  // background-color: var(--background-surface-layer-01) !important;
+  transition: background-color 0.3s ease, outline-color 0.3s ease;
+}
 
-
-  &.card--clickable:hover {
-    box-shadow: var(--elevation-200-box-shadow);
+/ .dark-theme {
+  .card {
+    background-color: var(--background-surface-dark) !important;
+    outline-color: var(--border-dark);
   }
 }
